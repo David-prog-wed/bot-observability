@@ -1,0 +1,26 @@
+# Archivos de dependencias
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Entornos
+.env
+*.env
+
+# Logs
+logs
+*.log
+log.txt
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Cache
+.cache/
+dist/
+build/
+coverage/
+
+# Configuración de VSCode
+.vscode/

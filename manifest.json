@@ -1,0 +1,41 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.16",
+  "version": "1.0.2",
+  "id": "b9e8f2a6-5f19-47fd-9a5a-7c9a0d3b2c11",
+  "packageName": "com.observabilidad.bot",
+  "developer": {
+    "name": "David Celis",
+    "websiteUrl": "https://rg-observabilidad-gwf3bzc7dmguffey.canadacentral-01.azurewebsites.net",
+    "privacyUrl": "https://rg-observabilidad-gwf3bzc7dmguffey.canadacentral-01.azurewebsites.net/privacy",
+    "termsOfUseUrl": "https://rg-observabilidad-gwf3bzc7dmguffey.canadacentral-01.azurewebsites.net/terms"
+  },
+  "name": {
+    "short": "Bot Observabilidad",
+    "full": "Bot de Observabilidad para runbooks y escalamiento"
+  },
+  "description": {
+    "short": "Bot de soporte para observabilidad",
+    "full": "Este bot responde sobre runbooks, dashboards y escalamiento de incidentes."
+  },
+  "icons": {
+    "outline": "bot-outline.png",
+    "color": "bot-color.png"
+  },
+  "accentColor": "#6264A7",
+  "bots": [
+    {
+      "botId": "f613afdc-ecc0-4e15-8d62-c88ceeac27f2",
+      "scopes": ["personal", "team", "groupchat"],
+      "supportsFiles": false,
+      "isNotificationOnly": false
+    }
+  ],
+  "webApplicationInfo": {
+    "id": "f613afdc-ecc0-4e15-8d62-c88ceeac27f2",
+    "resource": "api://rg-observabilidad-gwf3bzc7dmguffey.canadacentral-01.azurewebsites.net/botid-f613afdc-ecc0-4e15-8d62-c88ceeac27f2"
+  },
+  "validDomains": [
+    "rg-observabilidad-gwf3bzc7dmguffey.canadacentral-01.azurewebsites.net"
+  ]
+}
