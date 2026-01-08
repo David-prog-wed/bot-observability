@@ -1,41 +1,63 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
   "manifestVersion": "1.16",
-  "version": "1.0.2",
-  "id": "b9e8f2a6-5f19-47fd-9a5a-7c9a0d3b2c11",
-  "packageName": "com.observabilidad.bot",
+  "version": "1.0.0",
+  "id": "e45ce2dd-68b0-418e-8461-254f996ac5d7",
+  "packageName": "com.botobservability.teams",
   "developer": {
     "name": "David Celis",
-    "websiteUrl": "https://rg-observabilidad-gwf3bzc7dmguffey.canadacentral-01.azurewebsites.net",
-    "privacyUrl": "https://rg-observabilidad-gwf3bzc7dmguffey.canadacentral-01.azurewebsites.net/privacy",
-    "termsOfUseUrl": "https://rg-observabilidad-gwf3bzc7dmguffey.canadacentral-01.azurewebsites.net/terms"
-  },
-  "name": {
-    "short": "Bot Observabilidad",
-    "full": "Bot de Observabilidad para runbooks y escalamiento"
-  },
-  "description": {
-    "short": "Bot de soporte para observabilidad",
-    "full": "Este bot responde sobre runbooks, dashboards y escalamiento de incidentes."
+    "websiteUrl": "https://app-bot-observability-new-fgfhhfvhkaue2gzgkt.canadacentral-01.azurewebsites.net",
+    "privacyUrl": "https://app-bot-observability-new-fgfhhfvhkaue2gzgkt.canadacentral-01.azurewebsites.net/privacy",
+    "termsOfUseUrl": "https://app-bot-observability-new-fgfhhfvhkaue2gzgkt.canadacentral-01.azurewebsites.net/terms"
   },
   "icons": {
     "outline": "bot-outline.png",
     "color": "bot-color.png"
   },
-  "accentColor": "#6264A7",
+  "name": {
+    "short": "Bot Observability",
+    "full": "Bot Observability - Monitoring and Analytics Bot"
+  },
+  "description": {
+    "short": "Bot de observabilidad para Microsoft Teams",
+    "full": "Bot de observabilidad que proporciona monitoreo, análisis y métricas para mejorar la experiencia en Microsoft Teams. Permite realizar seguimiento de actividades y obtener insights en tiempo real."
+  },
+  "accentColor": "#0078D4",
   "bots": [
     {
-      "botId": "f613afdc-ecc0-4e15-8d62-c88ceeac27f2",
+      "botId": "e45ce2dd-68b0-418e-8461-254f996ac5d7",
       "scopes": ["personal", "team", "groupchat"],
       "supportsFiles": false,
-      "isNotificationOnly": false
+      "isNotificationOnly": false,
+      "commandLists": [
+        {
+          "scopes": ["personal", "team", "groupchat"],
+          "commands": [
+            {
+              "title": "help",
+              "description": "Muestra los comandos disponibles del bot"
+            },
+            {
+              "title": "status",
+              "description": "Verifica el estado del bot"
+            },
+            {
+              "title": "metrics",
+              "description": "Obtiene métricas de observabilidad"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "webApplicationInfo": {
-    "id": "f613afdc-ecc0-4e15-8d62-c88ceeac27f2",
-    "resource": "api://rg-observabilidad-gwf3bzc7dmguffey.canadacentral-01.azurewebsites.net/botid-f613afdc-ecc0-4e15-8d62-c88ceeac27f2"
-  },
+  "permissions": ["identity", "messageTeamMembers"],
   "validDomains": [
-    "rg-observabilidad-gwf3bzc7dmguffey.canadacentral-01.azurewebsites.net"
-  ]
+    "*.azurewebsites.net",
+    "canadacentral-01.azurewebsites.net",
+    "app-bot-observability-new-fgfhhfvhkaue2gzgkt.canadacentral-01.azurewebsites.net"
+  ],
+  "webApplicationInfo": {
+    "id": "e45ce2dd-68b0-418e-8461-254f996ac5d7",
+    "resource": "api://app-bot-observability-new-fgfhhfvhkaue2gzgkt.canadacentral-01.azurewebsites.net/e45ce2dd-68b0-418e-8461-254f996ac5d7"
+  }
 }
