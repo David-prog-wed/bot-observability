@@ -21,7 +21,7 @@ const config = {
 const credFactory = new ConfigurationServiceClientCredentialFactory({
   MicrosoftAppId: config.MicrosoftAppId,
   MicrosoftAppPassword: config.MicrosoftAppPassword,
-  MicrosoftAppType: "MultiTenant",
+  MicrosoftAppType: "SingleTenant",
   MicrosoftAppTenantId: config.MicrosoftAppTenantId,
 });
 
